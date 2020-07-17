@@ -1,5 +1,9 @@
+*{
+    color:black;
+}
+
 .headercontainer{
-    background-color: blue;
+    
     display: flex;
     flex-direction: column;
 }
@@ -9,15 +13,57 @@
 }
 
 .body{
-    background-color: red;
+    
 }
 
 .anchorarticle{
     text-decoration: none;
+    
+}
+
+.articletitle{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.articletext{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+#abstract{
+
 }
 
 .headerul{
     display: flex;
+    justify-content: center;
+
+}
+
+.Reacttimes{
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: xxx-large;
+}
+
+.headerbutton{
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 70px;
+}
+
+.headerbutton:hover{
+    background-color: black;
+    color:white
+}
+
+.articlecontent{
+    display: flex;
+    padding-left:100px;
+    padding-right:100px;
 }
 
 .footer{

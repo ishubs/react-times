@@ -1,36 +1,73 @@
-import React from 'react'
-import './../css/components.css'
-import {useState} from 'react'
+import React from "react";
+import "./../css/components.css";
+import { useState } from "react";
 function Header(props) {
-    const [tab, settab] = useState('home')
-    const onclick = (e) => {
-        
-        props.settab(e.target.innerHTML);
-    }
-    return (
-      <div className="headercontainer">
-        <div className="headertitle">
-          <h1>React times</h1>
-          <li className="headerul">
+  const [tab, settab] = useState("home");
+  const onclick = (e) => {
+    props.settab(e.target.innerHTML);
+  };
+  return (
+    <div className="headercontainer">
+      <div className="headertitle">
+        <h1 className="Reacttimes">The React Times</h1>
+        <li className="headerul">
+          <ul>
+            <a className="headerbutton" onClick={onclick}>
+              arts
+            </a>
+          </ul>
+          <ul>
+            <a className="headerbutton" onClick={onclick}>
+              automobiles
+            </a>
+          </ul>
+          
+          <ul>
+            <a className="headerbutton" onClick={onclick}>
+              business
+            </a>
+          </ul>
+          <ul>
+            <a className="headerbutton" onClick={onclick}>
+              Fashion
+            </a>
+          </ul>
+          <ul>
+            <a className="headerbutton" onClick={onclick}>
+              Food
+            </a>
+          </ul>
+          
+          <ul>
+            <a className="headerbutton" onClick={onclick}>
+              Home
+            </a>
+          </ul>
+          <ul>
+            <a className="headerbutton" onClick={onclick}>
+              Insider
+            </a>
+          </ul>
+          
             <ul>
-              <button onClick={onclick}>arts</button>
+              <a className="headerbutton" onClick={onclick}>
+                Magazine
+              </a>
             </ul>
             <ul>
-              <button onClick={onclick}>automobiles</button>
-            </ul>
+              <a className="headerbutton" onClick={onclick}>
+                Movies
+              </a>
+                  </ul>
             <ul>
-              <button onClick={onclick}>books</button>
-            </ul>
-            <ul>
-              <button onClick={onclick}>business</button>
-            </ul>
-            <ul>
-              <button onClick={onclick}>technology</button>
-            </ul>
-          </li>
-        </div>
+            <a className="headerbutton" onClick={onclick}>
+              technology
+            </a>
+          </ul>
+        </li>
       </div>
-    );
+    </div>
+  );
 }
 
-export default Header
+export default Header;
