@@ -1,0 +1,25 @@
+.headercontainer{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+}
+
+.headertitle{
+    flex: 1;
+}
+
+.body{
+    background-color: red;
+}
+
+.anchorarticle{
+    text-decoration: none;
+}
+
+.headerul{
+    display: flex;
+}
+
+.footer{
+    background-color: blueviolet;
+}
